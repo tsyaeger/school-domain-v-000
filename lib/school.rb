@@ -3,7 +3,6 @@
 
 class School
   
-  # attr_accessor :student, :grade, :school_name, :roster, :student_name
 
   
   def initialize(school_name)
