@@ -18,8 +18,8 @@ class School
     @roster[grade] << student_name
   end
 
-  def grade(number)
-    @roster[number]
+  def grade(grade)
+    @roster[grade]
   end
 
   def sort
