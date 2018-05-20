@@ -11,6 +11,22 @@ class School
     @roster = {}
   end
   
+  
+  def roster
+    @roster
+  end
+  
+    
+  def add_student=(student, grade)
+    @student_name = student
+    if @roster.include?(grade) == true
+      @roster[grade] << student
+    else 
+      @roster[grade] = []
+    end
+  end
+  
+  
   def sort 
     @roster.sort 
   end
@@ -19,17 +35,6 @@ class School
     @roster[grade]
   end
 
-  
-  def add_student=(student, grade)
-    @student_name = student
-    if @roster.include?(grade) == true
-      @roster[grade] << student
-    else 
-      @roster[grade] = []
-      
-    end
-  end
-  
 end
     
     
