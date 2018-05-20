@@ -38,7 +38,7 @@ class School
 
 end
     
-    
+  end
     
     
     
