@@ -7,13 +7,16 @@ class School
 
   
   def initialize(school_name)
-    @school_name = school_name
+    @school = school
     @roster = {}
   end
   
   def sort 
     @roster.sort 
   end
+  
+  def grade(grade)
+    @roster[grade]
 
   
   def add_student=(student, grade)
